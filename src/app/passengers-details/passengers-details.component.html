@@ -1,0 +1,17 @@
+<div class="card">
+    <div class="card-body">
+        <h3>
+            <span class="span" [ngStyle]="{'background-color': pDetails.checkedIn ? 'green' : 'red'}"></span>
+            {{pDetails.fullname}}
+        </h3>
+        <p>
+            CheckInDate : {{pDetails.checkInDate ? (pDetails.checkInDate | date) : 'No CheckIn'}}
+        </p>
+        <p>
+            <!-- Children : {{pDetails.children?.length}} -->
+            Children : {{pDetails.children ? pDetails.children?.length : 0}}
+        </p>
+        <button class="btn btn-info mr-2">Edit</button>
+        <button class="btn btn-danger">Remove</button>
+    </div>
+</div>

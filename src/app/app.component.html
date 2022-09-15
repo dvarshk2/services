@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <h3 class="bg-primary">Airline Passengers</h3>
+      <p>
+        <app-passengers-count></app-passengers-count>        
+      </p>
+      <p>
+        <app-passengers-details [pDetails]="passenger" *ngFor="let passenger of passengerData"></app-passengers-details>
+      </p>
+    </div>
+  </div>
+</div>
